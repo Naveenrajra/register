@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: linear-gradient(white,rgb(44, 151, 170));
+    }
+    form{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .content{
+        background-color: rgb(228, 152, 59);
+        width: 500px;
+        height: 110vh;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .type input{
+        width: 80%;
+        padding: 10px;
+    }
+</style>
+<body>
+    <center><h1>Interview Registration Form</h1></center>
+    <form action="/submit" method="post">
+        
+         <div class="content">  
+            <div class="type">
+            <h2>REGISTER</h2>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+            </div>
+
+            
+            Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+
+            <label for="Address">Address:</label><br>
+            <textarea id="Address" name="Address" rows="5" cols="50" required></textarea><br><br>
+           
+
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position" required>
+                <option value="developer">Software Developer</option>
+                <option value="designer">UI/UX Designer</option>
+                <option value="manager">Project Manager</option>
+                <option value="analyst">Business Analyst</option>
+            </select><br><br>
+            <label for="position">Location:</label>
+            <select id="position" name="position" required>
+                <option>Salem</option>
+                <option selected>Chennai</option>
+                <option>Coimbatore</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+            </select><br><br>
+
+            <label for="skills">Key Skills:</label><br>
+            <textarea id="skills" name="skills" rows="4" required></textarea><br><br>
+            
+            <center></cente><input type="submit" value="Register"></center>
+         </div>
+    </form>
+</body>
+</html>
